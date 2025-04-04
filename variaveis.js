@@ -10,6 +10,15 @@ let familia = [
         parentesco : "Esposa"
     }
 ]
+let familiaa = {
+    esposa: {
+      nome: "Shéslyda",
+      descricao: "Carinhosa, determinada e apaixonada por jardinagem."
+    }
+}
+
+
+
 
 // Concatenação
 
