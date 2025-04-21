@@ -14,7 +14,7 @@ function acessarGlobal() {
 
 console.log(acessarGlobal())
 //a baixo, a variável local que não pode ser acessada
-// console.log("Tentando acessar "+ minhaLocal)
+//  console.log("Tentando acessar "+ minhaLocal)
    
 
 // -------------------------------Função sem nome
@@ -31,7 +31,7 @@ console.log(acessarGlobalAnonima())
 // -------------------------------Função Arrow Function
 let acessarGlobaSetada = () => {
     let localSetada = "Sou Local"
-    return `${minhaGlobal}`
+    return `${minhaGlobal} e eu sou ${localSetada}`
 }
 
 console.log(acessarGlobaSetada())

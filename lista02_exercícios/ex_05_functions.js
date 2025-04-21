@@ -12,14 +12,15 @@ let a = 2, b = -4, c = -6
 
 let valorDelta = calculoDelta(a, b, c)
 
-function X1eX2(B, Delta, A) {
-    let x = (- B + Math.sqrt(Delta)) / (2 * A)
-    let xx = (- B - Math.sqrt(Delta)) / (2 * A)
+function X1eX2(B, A) {
+    let x = (- B + Math.sqrt(valorDelta)) / 2 * A
+    let xx = (- B - Math.sqrt(valorDelta)) / 2 * A
 
     return `X' = ${x} e X" = ${xx}`
 }
 console.log(`Resultado da Função Tradicional com nome:`)
-console.log(`Valor de Delta = ${valorDelta}, ${X1eX2(b, valorDelta, a)}`)
+
+console.log(`Valor de Delta = ${valorDelta}, ${X1eX2(b, a)}`)
 
 //-------------------------------Função Anônima
 let calculoDeltaAnonima = function (A, B, C) {

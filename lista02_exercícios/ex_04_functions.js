@@ -20,5 +20,6 @@ console.log(verificandoPar(5))
 
 //-------------------------------Função Setada
 let par = (numero) => (numero % 2 == 0 ? `${numero} é par` : `${numero} é impar`)
+
 console.log(par(9))
    
