@@ -1,19 +1,19 @@
 // Exemplo de Criação de Matrizes
 
 let linhas = 2;
-let colunas = 3;
+let colunas = 2;
 
 let matriz = [];
 
 for (let i = 0; i < linhas; i++) {
   matriz[i] = []; // cria a linha
   for (let j = 0; j < colunas; j++) {
-    console.log(matriz[i][j] = `L${i} C${j}`); // valor formatado com linha e coluna
+    matriz[i][j] = `L${i} C${j}`; 
   }
 }
-
-// console.log("Matriz:");
-matriz.forEach(linha => console.log(linha));
+console.log("Matriz:"+matriz);
+console.log("\n\n");
+matriz.forEach(element => console.log(""+element));
 
 
 
