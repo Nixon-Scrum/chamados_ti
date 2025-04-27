@@ -61,33 +61,28 @@ E totalizar o financeiro das vendas.
 
                 console.log(`${comes} e ${bebes}`)        
     }
+                console.log("-----------VENDAS SENDO EFETUADAS-----------------------")
                 efetuandoVenda("Salgado de Carne", "Suco") // 1
                 efetuandoVenda("Pastel de Carne", "Água") // 1
                 efetuandoVenda("Salgado de Queijo", "Refrigerante") // 1
                 efetuandoVenda("Pastel de Queijo", "Água") // 2
                 efetuandoVenda("Pastel de Queijo", "Refrigerante") // 2
-
-            
+                console.log("-----------DESCRIÇÃO DO QUE FOI VENDIDO ----------------")            
                 console.log(`Qtde de pastel de queijo vendida: ${contPastelQueijo}`)
                 console.log(`Qtde de salgado de carne vendida: ${contSalgadoCarne}`)
                 console.log(`Qtde de salgado de queijo vendida: ${contSalgadoQueijo}`)
                 console.log(`Qtde de pastel de carne vendida: ${contPastelCarne}`)
-                console.log("\n")
-
+                console.log("-----------RELATÓRIO DE CONTAGEM DO QUE FOI VENDIDO-----")                
                 console.log(`Qtde de Refrigerante vendido: ${contRefrigerante}`)
                 console.log(`Qtde de Água vendida: ${contAgua}`)
                 console.log(`Qtde de Suco vendido: ${contSuco}`)
-                console.log("\n")
-
-                console.log("Qtde de COMIDAS vendidas: "+
-                (contPastelQueijo + contSalgadoCarne + contSalgadoQueijo + contPastelCarne))
-                console.log("Total Financeiro (COMIDAS): "+totalValorComidas.toFixed(2))
-                console.log("\n")
-                console.log("Total de BEBIDAS vendidas): "+
-                (contAgua + contRefrigerante + contSuco))
-                console.log("Total Financeiro (BEBIDAS): "+totalValorBebidas.toFixed(2))
-
-                console.log("Total faturado: R$"+(totalValorComidas + totalValorBebidas).toFixed(2))
+                console.log("Qtde de COMIDAS vendidas: "+(contPastelQueijo + contSalgadoCarne + contSalgadoQueijo + contPastelCarne))
+                console.log("Qtde de BEBIDAS vendidas: "+(contAgua + contRefrigerante + contSuco))
+                console.log("-----------RELATÓRIO FINANCEIRO DETALHADO---------------")            
+                console.log("Total Financeiro (BEBIDAS): R$ "+totalValorBebidas.toFixed(2))
+                console.log("Total Financeiro (COMIDAS): R$ "+totalValorComidas.toFixed(2))
+                console.log("-----------TOTAL FATURADO DAS VENDAS--------------------")
+                console.log("Total Faturado: R$ "+(totalValorComidas + totalValorBebidas).toFixed(2))
 
 
 
