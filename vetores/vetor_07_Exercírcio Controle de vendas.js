@@ -6,8 +6,6 @@ No fim de cada venda preciso totalizar quantos e quais itens foram vendidos;
 E totalizar o financeiro das vendas.
 
 */
-
-
     let comida = ["Pastel de Queijo", "Salgado de Carne", "Salgado de Queijo", "Pastel de Carne"]
 
     let contPastelQueijo = 0, contSalgadoCarne = 0
@@ -67,17 +65,20 @@ E totalizar o financeiro das vendas.
                 efetuandoVenda("Salgado de Queijo", "Refrigerante") // 1
                 efetuandoVenda("Pastel de Queijo", "Água") // 2
                 efetuandoVenda("Pastel de Queijo", "Refrigerante") // 2
+
                 console.log("-----------DESCRIÇÃO DO QUE FOI VENDIDO ----------------")            
                 console.log(`Qtde de pastel de queijo vendida: ${contPastelQueijo}`)
                 console.log(`Qtde de salgado de carne vendida: ${contSalgadoCarne}`)
                 console.log(`Qtde de salgado de queijo vendida: ${contSalgadoQueijo}`)
                 console.log(`Qtde de pastel de carne vendida: ${contPastelCarne}`)
+
                 console.log("-----------RELATÓRIO DE CONTAGEM DO QUE FOI VENDIDO-----")                
                 console.log(`Qtde de Refrigerante vendido: ${contRefrigerante}`)
                 console.log(`Qtde de Água vendida: ${contAgua}`)
                 console.log(`Qtde de Suco vendido: ${contSuco}`)
                 console.log("Qtde de COMIDAS vendidas: "+(contPastelQueijo + contSalgadoCarne + contSalgadoQueijo + contPastelCarne))
                 console.log("Qtde de BEBIDAS vendidas: "+(contAgua + contRefrigerante + contSuco))
+                
                 console.log("-----------RELATÓRIO FINANCEIRO DETALHADO---------------")            
                 console.log("Total Financeiro (BEBIDAS): R$ "+totalValorBebidas.toFixed(2))
                 console.log("Total Financeiro (COMIDAS): R$ "+totalValorComidas.toFixed(2))
